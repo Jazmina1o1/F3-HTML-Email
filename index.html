@@ -7,39 +7,70 @@
 	<title>HTML Email</title>
 	<style type="text/css">
 		body {
+			background-color: #fffcfc;
 			margin: 0;
 		}
+
 		table {
-			border-spacing: 0;
+			border-collapse: separate;
+      border-spacing: 0px;
+	  background-color: #fae480;
 		}
+	article {
+		background-color: #fadd7e;
+		width: 150px;
+		height: 150px;
+	}
 		td {
-			padding: 0;
+			padding: 10px;
 		}
+
 		img {
 			border: 0;
 		}
-		.wrapper{
+
+		.wrapper {
 			width: 100%;
 			table-layout: fixed;
 			padding-bottom: 50px;
 		}
-		.main{
+
+		.main {
 			width: 100%;
 			max-width: 600px;
 		}
+		p {
+			font-family: Arial, sans-serif;
+			font-size: 16px;
+			line-height: 1.5;
+			color: #92680d;
+			text-align: center;
+		}
+		h1 {
+			font-family: Arial, sans-serif;
+		
+			line-height: 1.5;
+			color: #92680d;
+			text-align: center;
+		}
+
 	</style>
 </head>
+
 <body>
-
 	<center class="wrapper">
+	<table class="main" width="100%">
+	<tr>
+	<td>
+	<h1>Hello!</h1>
+	<p>Pasta for life</p>
+	</td>
+	</tr>
+		</table>
+		<article>
+	<p>This is an article about pasta.</p>
+</article>
 
-		<table class="main" width="100%">
-
-			<h1>Hello, World!</h1>
-
-		</table> 
-
-	</center> 
-
+	</center>
 </body>
 </html>
