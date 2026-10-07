@@ -12,17 +12,24 @@
 		}
 
 		table {
-			border-collapse: separate;
-      border-spacing: 0px;
-	  background-color: #fae480;
+			border-collapse: collapse;
+			border-spacing: 0;
+			background-color: #ffe48c;
+			width: 100%;
+			max-width: 600px;
 		}
-	article {
-		background-color: #ffefbb;
-		width: 57%;
-		height: 700px;
-		position: relative;
-		top: -20px;
-	}
+		article {
+			display: block;
+			clear: both;
+			background-color: #fdecc2;
+			width: 100%;
+			max-width: 600px;
+			min-height: 900px;
+			margin: 0 auto;
+			box-sizing: border-box;
+			padding: 20px;
+			border-bottom: 2px solid #c78374;
+		}
 		td {
 			padding: 10px;
 		}
@@ -48,6 +55,15 @@
 			color: #92680d;
 			text-align: center;
 		}
+		article p {
+			
+			font-family: Arial, sans-serif;
+			font-size: 16px;
+			line-height: 1.5;
+			color: #b2614e;
+			text-align: center;
+			
+		}
 		h1 {
 			font-family: Arial, sans-serif;
 		
@@ -55,7 +71,36 @@
 			color: #92680d;
 			text-align: center;
 		}
+ h3 {
+			font-family: Arial, sans-serif;
+			font-size: 20px;
+			line-height: 1.5;
+			color: #a85e4d;
+			text-align: center;
+		}
 
+		.divider {
+			display: block;
+			clear: both;
+			width: 80%;
+			max-width: 520px;
+			height: 1px;
+			background-color: #b06117;
+			border: 0;
+			margin: 20px auto 0;
+			padding: 0;
+			line-height: 0;
+			font-size: 0;
+		}
+.left-text {
+			font-family: Arial, sans-serif;
+			font-size: 16px;
+			line-height: 1.5;
+			color: #69302c;
+			text-align: left;
+			display: block;
+			margin: 20px 0 0 70px;
+		}
 	</style>
 </head>
 
@@ -70,8 +115,13 @@
 	</tr>
 		</table>
 		<article>
-	<BR> <p>QUOTE/SMTH</p>
-</article>
+	<h3>Welcome to the home of the Pastas! </h3> <p>The pasta you want is granted.</p>
+
+		<hr class="divider" /> 
+		<br>
+		<p class="left-text">w</p>
+	</article>
+	
 
 	</center>
 </body>
