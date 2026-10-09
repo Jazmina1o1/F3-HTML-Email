@@ -7,29 +7,33 @@
 	<title>HTML Email</title>
 	<style type="text/css">
 		body {
-			background-color: #fffcfc;
+			background-color: #312e2e;
 			margin: 0;
+			font-family: Arial, sans-serif;
 		}
 
 		table {
 			border-collapse: collapse;
 			border-spacing: 0;
-			background-color: #ffe48c;
+			background-color: #c99f70;
 			width: 100%;
-			max-width: 600px;
+			max-width: 700px;
+				margin: 0 auto;
 		}
+
 		article {
 			display: block;
 			clear: both;
-			background-color: #fdecc2;
+			background-color: #fff9eb;
 			width: 100%;
 			max-width: 600px;
-			min-height: 900px;
+			min-height: 1600px;
 			margin: 0 auto;
 			box-sizing: border-box;
 			padding: 20px;
-			border-bottom: 2px solid #c78374;
+			border-bottom: 2px solid #c7a374;
 		}
+
 		td {
 			padding: 10px;
 		}
@@ -42,12 +46,15 @@
 			width: 100%;
 			table-layout: fixed;
 			padding-bottom: 50px;
+			max-width: 700px;
+			margin: 0 auto;
 		}
 
 		.main {
 			width: 100%;
 			max-width: 600px;
 		}
+
 		p {
 			font-family: Arial, sans-serif;
 			font-size: 16px;
@@ -55,27 +62,28 @@
 			color: #92680d;
 			text-align: center;
 		}
+
 		article p {
-			
 			font-family: Arial, sans-serif;
 			font-size: 16px;
 			line-height: 1.5;
-			color: #b2614e;
+			color: #e2a55f;
 			text-align: center;
-			
 		}
+
 		h1 {
 			font-family: Arial, sans-serif;
-		
 			line-height: 1.5;
-			color: #92680d;
+			color: #ac8558;
 			text-align: center;
 		}
- h3 {
+		
+
+		h3 {
 			font-family: Arial, sans-serif;
 			font-size: 20px;
 			line-height: 1.5;
-			color: #a85e4d;
+			color:#e2a55f;
 			text-align: center;
 		}
 
@@ -92,37 +100,89 @@
 			line-height: 0;
 			font-size: 0;
 		}
-.left-text {
+
+		.left-text {
 			font-family: Arial, sans-serif;
 			font-size: 16px;
 			line-height: 1.5;
-			color: #69302c;
+			color:#6e4414;
 			text-align: left;
 			display: block;
-			margin: 20px 0 0 70px;
+			margin: 20px 0 0 65px;
+			font-weight: bold;
 		}
+
+		.right-text {
+			font-family: Arial, sans-serif;
+			font-size: 16px;
+			line-height: 1.5;
+			color: #6e4414;
+			text-align: right;
+			display: block;
+			margin: 20px 65px 0 0;
+			font-weight: bold;
+		}
+
+		img{
+			display: block;
+			margin: 5px auto;
+			border-radius: 10px;
+		
+			color: #cac1c1;
+		}
+		
 	</style>
 </head>
 
 <body>
 	<center class="wrapper">
-	<table class="main" width="100%">
-	<tr>
-	<td>
-	<h1>Hello!</h1>
-	<p>Pasta for life</p>
-	</td>
-	</tr>
+		<table class="main" width="100%">
+			<tr>
+				<td style="padding: 0;">
+					<img src="https://github.com/Jazmina1o1/images/blob/main/Banner.png?raw=true" alt="Pasta Banner" width="600" height="220" align="left" style="display: block; width: 100%; max-width: 600px; height: auto; margin: 0; border-radius:0%">
+				</td>
+			</tr>
 		</table>
 		<article>
-	<h3>Welcome to the home of the Pastas! </h3> <p>The pasta you want is granted.</p>
+			<h3>Welcome to the home of the Pastas! </h3>
+			<p>The pasta you want is granted.</p>
+			<hr class="divider" />
+			<br>
+			
+			<table role="presentation" width="100%" style="width: 100%; max-width: 560px; background-color: transparent;">
+	<tr>
+	<td width="50%" style="padding: 20px; vertical-align: middle;">
+		<img src="https://github.com/Jazmina1o1/images/blob/main/pasta-fetuccini-alfredo-ricas-recetas.webp?raw=true" alt="Pasta" width="200" height="200" style="display: block; width: 100%; max-width: 200px; height: auto; margin: 0; border-radius: 10px; border: 3px dashed #e9c133;">
+		</td>
+		<td width="50%" style="padding: 20px; vertical-align: middle;">
+			<p style="margin: 0; text-align: center; color: #6e4414; font-weight: bold; line-height: 1.5;">
+			30% OFF<br>
+	Limited Time Offer!<br>
+		Don't miss out on our delicious yummy awesome sauce pasta dishes!
+			</p>
+		</td>
+				</tr>
+			</table>
+		<table role="presentation" width="100%" style="width: 100%; max-width: 560px; background-color: transparent; margin-top: 20px;">
+				<tr>
+	<td width="50%" style="padding: 20px; vertical-align: middle;">
+	<p style="margin: 0; text-align: center; color: #6e4414; font-weight: bold;line-height: 1.5;">
+	25% OFF<br>
+	Best Pasta
+	<br> <p style="margin: 0; text-align: center; color: #6e4414; font-weight: bold;line-height: 1.5;"> (not biased...)</p>
 
-		<hr class="divider" /> 
-		<br>
-		<p class="left-text">w</p>
-	</article>
+			<p style="margin: 0; text-align: center; color: #6e4414; font-weight: bold;line-height: 1.5;">
+			BEST lasagna made fresh for your cravings and hunger.
+	</p>
+	</td>
+	<td width="50%" style="padding: 20px; vertical-align: middle;">
+		<img src="https://github.com/Jazmina1o1/images/blob/main/Homemade-Italian-Lasagna-square.jpg?raw=true" alt="Lasagna" width="200" height="200" style="display: block; width: 100%; max-width: 200px; height: auto; margin: 0 auto; border-radius: 10px; border: 3px dashed #e9c133;">
+	</td>
+	</tr>
+	</table>
+
 	
-
+	</article>
 	</center>
 </body>
 </html>
