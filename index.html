@@ -1,188 +1,261 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>HTML Email</title>
-	<style type="text/css">
-		body {
-			background-color: #312e2e;
-			margin: 0;
-			font-family: Arial, sans-serif;
-		}
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Email</title>
+    <style type="text/css">
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #312e2e;
+            font-family: Arial, sans-serif;
+        }
 
-		table {
-			border-collapse: collapse;
-			border-spacing: 0;
-			background-color: #c99f70;
-			width: 100%;
-			max-width: 700px;
-				margin: 0 auto;
-		}
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
 
-		article {
-			display: block;
-			clear: both;
-			background-color: #fff9eb;
-			width: 100%;
-			max-width: 600px;
-			min-height: 1600px;
-			margin: 0 auto;
-			box-sizing: border-box;
-			padding: 20px;
-			border-bottom: 2px solid #c7a374;
-		}
+        img {
+            border: 0;
+            outline: none;
+            text-decoration: none;
+            display: block;
+        }
 
-		td {
-			padding: 10px;
-		}
+        a {
+            text-decoration: none;
+        }
 
-		img {
-			border: 0;
-		}
+        .wrapper {
+            width: 100%;
+            background-color: #c99f70;
+        }
 
-		.wrapper {
-			width: 100%;
-			table-layout: fixed;
-			padding-bottom: 50px;
-			max-width: 700px;
-			margin: 0 auto;
-		}
+        .container {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+        }
 
-		.main {
-			width: 100%;
-			max-width: 600px;
-		}
+        h3 {
+            margin: 0 0 12px;
+            font-family: Arial, sans-serif;
+            font-size: 20px;
+            line-height: 1.5;
+            color: #e2a55f;
+            text-align: center;
+        }
 
-		p {
-			font-family: Arial, sans-serif;
-			font-size: 16px;
-			line-height: 1.5;
-			color: #92680d;
-			text-align: center;
-		}
+        p {
+            margin: 0 0 12px;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.5;
+            color: #6e4414;
+            text-align: center;
+        }
 
-		article p {
-			font-family: Arial, sans-serif;
-			font-size: 16px;
-			line-height: 1.5;
-			color: #e2a55f;
-			text-align: center;
-		}
+        .divider {
+            display: block;
+            width: 80%;
+            max-width: 520px;
+            border: 0;
+            border-top: 1px solid #b06117;
+            margin: 20px auto 0;
+        }
 
-		h1 {
-			font-family: Arial, sans-serif;
-			line-height: 1.5;
-			color: #ac8558;
-			text-align: center;
-		}
-		
+        .promo-card {
+            background-color: #fff9eb;
+            border: 2px solid #d7aa73;
+            border-radius: 12px;
+        }
 
-		h3 {
-			font-family: Arial, sans-serif;
-			font-size: 20px;
-			line-height: 1.5;
-			color:#e2a55f;
-			text-align: center;
-		}
+        .offer-box {
+            background-color: #f9efe0;
+            border: 2px solid #d7aa73;
+            border-radius: 12px;
+        }
 
-		.divider {
-			display: block;
-			clear: both;
-			width: 80%;
-			max-width: 520px;
-			height: 1px;
-			background-color: #b06117;
-			border: 0;
-			margin: 20px auto 0;
-			padding: 0;
-			line-height: 0;
-			font-size: 0;
-		}
+        .cta-button {
+            display: inline-block;
+            background-color: #8b4d1e;
+            color: #d6c2c2 !important;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 6px;
+            padding: 12px 24px;
+            margin-top: 12px;
+        }
 
-		.left-text {
-			font-family: Arial, sans-serif;
-			font-size: 16px;
-			line-height: 1.5;
-			color:#6e4414;
-			text-align: left;
-			display: block;
-			margin: 20px 0 0 65px;
-			font-weight: bold;
-		}
+        .cta-button:hover {
+            background-color: #f5ab7a !important;
+        }
 
-		.right-text {
-			font-family: Arial, sans-serif;
-			font-size: 16px;
-			line-height: 1.5;
-			color: #6e4414;
-			text-align: right;
-			display: block;
-			margin: 20px 65px 0 0;
-			font-weight: bold;
-		}
+        .wheel-button {
+            display: inline-block;
+            background-color: #8b4d1e;
+            color: #d6c2c2 !important;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 6px;
+            padding: 12px 24px;
+            margin: 12px auto 0;
+        }
 
-		img{
-			display: block;
-			margin: 5px auto;
-			border-radius: 10px;
-		
-			color: #cac1c1;
-		}
-		
-	</style>
+        .wheel-button:hover {
+            background-color: #dd9a6e !important;
+        }
+
+        @media only screen and (max-width: 620px) {
+            .two-col td {
+                display: block !important;
+                width: 100% !important;
+            }
+        }
+    </style>
 </head>
-
 <body>
-	<center class="wrapper">
-		<table class="main" width="100%">
-			<tr>
-				<td style="padding: 0;">
-					<img src="https://github.com/Jazmina1o1/images/blob/main/Banner.png?raw=true" alt="Pasta Banner" width="600" height="220" align="left" style="display: block; width: 100%; max-width: 600px; height: auto; margin: 0; border-radius:0%">
-				</td>
-			</tr>
-		</table>
-		<article>
-			<h3>Welcome to the home of the Pastas! </h3>
-			<p>The pasta you want is granted.</p>
-			<hr class="divider" />
-			<br>
-			
-			<table role="presentation" width="100%" style="width: 100%; max-width: 560px; background-color: transparent;">
-	<tr>
-	<td width="50%" style="padding: 20px; vertical-align: middle;">
-		<img src="https://github.com/Jazmina1o1/images/blob/main/pasta-fetuccini-alfredo-ricas-recetas.webp?raw=true" alt="Pasta" width="200" height="200" style="display: block; width: 100%; max-width: 200px; height: auto; margin: 0; border-radius: 10px; border: 3px dashed #e9c133;">
-		</td>
-		<td width="50%" style="padding: 20px; vertical-align: middle;">
-			<p style="margin: 0; text-align: center; color: #6e4414; font-weight: bold; line-height: 1.5;">
-			30% OFF<br>
-	Limited Time Offer!<br>
-		Don't miss out on our delicious yummy awesome sauce pasta dishes!
-			</p>
-		</td>
-				</tr>
-			</table>
-		<table role="presentation" width="100%" style="width: 100%; max-width: 560px; background-color: transparent; margin-top: 20px;">
-				<tr>
-	<td width="50%" style="padding: 20px; vertical-align: middle;">
-	<p style="margin: 0; text-align: center; color: #6e4414; font-weight: bold;line-height: 1.5;">
-	25% OFF<br>
-	Best Pasta
-	<br> <p style="margin: 0; text-align: center; color: #6e4414; font-weight: bold;line-height: 1.5;"> (not biased...)</p>
+    <table class="wrapper" role="presentation" width="100%">
+        <tr>
+         <td align="center" style="padding: 20px 10px;">
+    <table class="container" role="presentation" width="100%" style="max-width: 600px; background-color: #ebdcc6; border: 2px solid #d7aa73; border-radius: 12px; overflow: hidden;">
+  <tr>
+ <td style="padding: 0;">
+ <img src="https://github.com/Jazmina1o1/images/blob/main/Banner.png?raw=true" alt="Pasta Banner" width="600" height="220" style="display: block; width: 100%; max-width: 600px; height: auto; margin: 0;" />
+     </td>
+    </tr>
+    <tr>
+    <td style="padding: 20px;">
+     <h3>Welcome to the home of the Pastas!</h3>
+    <p style="color: #6e4414;">The pasta you want is granted.</p>
+     <hr class="divider" />
+<table class="two-col" role="presentation" width="100%" style="margin-top: 20px;">
+<tr>
+<td width="50%" style="padding: 20px; vertical-align: middle;">
+<a href="https://docs.google.com/document/d/1DDiFA-TML_HZmhBjj1rPAOwGdlxsu7iZ8jwHEq2W9g0/edit?usp=sharing" aria-label="Open the fettuccine alfredo recipe" style="display: block; width: 100%; max-width: 200px; margin: 0 auto;">
+<img src="https://github.com/Jazmina1o1/images/blob/main/pasta-fetuccini-alfredo-ricas-recetas.webp?raw=true" alt="Pasta" width="200" height="200" style="display: block; width: 100%; max-width: 200px; height: auto; margin: 0 auto; border-radius: 10px; border: 3px dashed #d3a36d; box-sizing: border-box;" />
+</a>
+</td>
+<td width="50%" style="padding: 20px; vertical-align: middle;">
+<table class="offer-box" role="presentation" width="100%">
+<tr><td style="padding: 18px;">
+ <p style="margin: 0; color: #6e4414; font-weight: bold;">
+ 30% OFF<br />
+ Limited Time Offer!<br />
+ Don't miss out on our delicious yummy awesome sauce pasta dishes!
+</p>
+ </td></tr>
+   <table> </table>                              
+ </td>
+            
+</tr>
+  </table>
 
-			<p style="margin: 0; text-align: center; color: #6e4414; font-weight: bold;line-height: 1.5;">
-			BEST lasagna made fresh for your cravings and hunger.
+   <table role="presentation" width="100%" style="margin-top: 20px;">
+ <tr>
+<td width="50%" style="padding: 20px; vertical-align: middle;">
+ <table class="offer-box" role="presentation" width="100%">
+ <tr><td style="padding: 18px;">
+ <p style="margin: 0; color: #6e4414; font-weight: bold;">
+    25% OFF<br />
+ Best Pasta<br />
+ (not biased...)<br />
+ BEST lasagna made fresh for your cravings and hunger.
+   </p>
+    </td></tr>
+      </table>
+</td>
+ <td width="50%" style="padding: 20px; vertical-align: middle;">
+ <a href="https://docs.google.com/document/d/1DDiFA-TML_HZmhBjj1rPAOwGdlxsu7iZ8jwHEq2W9g0/edit?usp=sharing" aria-label="Open the fettuccine alfredo recipe" style="display: block; width: 100%; max-width: 200px; margin: 0 auto;">
+<img src="https://github.com/Jazmina1o1/images/blob/main/Homemade-Italian-Lasagna-square.jpg?raw=true" alt="Lasagna" width="200" height="200" style="display: block; width: 100%; max-width: 200px; height: auto; margin: 0 auto; border-radius: 10px; border: 3px dashed #ceb485;" />
+ </a>
+  </td>
+</tr>
+   </table>
+<p style="margin-top: 8px; color: #6e4414; font-weight: bold;">Click the photos for the menu</p>
+  </td>
+ </tr>
+ <tr>
+   <td style="padding: 0 20px 20px;">
+ <table role="presentation" width="100%" style="background-color: #dacab4; border-radius: 12px; border: 2px solid #d4b07f;">
+    <tr>
+  <td style="padding: 20px 20px 10px;">
+   <h3>Fresh from the kitchen</h3>
+    <p style="color: #6e4414;">Handmade pasta, cozy vibes, and flavor that keeps everyone coming back for more.</p>
+    <hr class="divider" />
+	<table ="promo-card" role="presentation" width="100%" style="margin-top: 20px;">
+   <tr><td style="padding: 18px;">
+  <p style="margin: 0; color: #6e4414; border: 3px solid #d4b07f; padding: 12px; font-weight: bold; border-radius: 10px;">We got desserts too! Check them out in our menu. We have a variety of desserts to choose from, including tiramisu, cannoli, and gelato.</p>
+ </td></tr>
+ </table>
+<img src="https://github.com/Jazmina1o1/images/blob/main/3b48966a5318c3b7428daf1ed282aac1.png?raw=true" alt="Pasta dessert display" width="400" height="230" style="display: block; width: 100%; max-width: 400px; height: auto; margin: 20px auto 0;" />
+         </td>
+ </tr>
+ </table>
+     </td>
+</tr>
+<tr>
+<td style="padding: 0 20px 20px;">
+<table role="presentation" width="100%" style="background-color: #f9efe0; border-radius: 12px; border: 2px solid #c7a374;">
+ <tr>
+ <td style="padding: 20px;">
+<h3>Make Everyday a Pasta Special</h3>
+ <p style="color: #6e4414;">Choose a favorite and gather around the table for a delicious meal.</p>
+ <img src="https://gifdb.com/images/high/cute-garfield-eating-spaghetti-gslthaetuodjrc6i.gif" alt="Garfield Eating Spaghetti" width="400" height="300" style="display: block; width: 100%; max-width: 400px; height: auto; margin: 0 auto; border-radius: 10px;" />
+<table role="presentation" align="center" style="margin-top: 12px;"><tr><td align="center">
+<a class="cta-button" href="https://docs.google.com/document/d/1DDiFA-TML_HZmhBjj1rPAOwGdlxsu7iZ8jwHEq2W9g0/edit?tab=t.ywzst2rxdjm">Book Now</a>
+</td></tr></table>
+  </td>
+  </tr>
+  </table>
+  </td>
+  </tr>
+<tr>
+ <td style="padding: 0 20px 20px;">
+  <table role="presentation" width="100%" style="background-color: #f9efe0; border-radius: 12px; border: 2px solid #c7a374;">
+ <tr>
+<td style="padding: 20px;">
+<h3>Can't Decide What to Eat?</h3>
+<p style="color: #6e4414;">Give our food wheel a try and let it choose your next delicious meal! or do it just for fun.</p>
+<img src="https://github.com/Jazmina1o1/images/blob/main/Screenshot%202026-10-14%20091920.png?raw=true" alt="Food wheel" width="400" height="300" style="display: block; width: 100%; max-width: 400px; height: auto; margin: 0 auto; border-radius: 10px;" />
+ <table role="presentation" align="center" style="margin-top: 12px;"><tr><td align="center">
+ <a href="https://wheelofnames.com/wru-ffp" class="wheel-button" aria-label="Open the wheel to choose what to eat">Spin the Food Wheel</a>
+ </td></tr></table>
+ </td>
+</tr>
+</table>
+</td>
+  </tr>
+<tr>
+ <td style="padding: 0 20px 20px;">
+ <table role="presentation" width="100%" style="background-color: #dacab4; border-radius: 12px; border: 2px solid #d4b07f;">
+ <tr>
+ <td style="padding: 20px; text-align: center;">
+     <h3>Follow Us for More Pasta</h3>
+     <p style="color: #6e4414;">Stay connected for delicious updates and specials.
 	</p>
-	</td>
-	<td width="50%" style="padding: 20px; vertical-align: middle;">
-		<img src="https://github.com/Jazmina1o1/images/blob/main/Homemade-Italian-Lasagna-square.jpg?raw=true" alt="Lasagna" width="200" height="200" style="display: block; width: 100%; max-width: 200px; height: auto; margin: 0 auto; border-radius: 10px; border: 3px dashed #e9c133;">
-	</td>
-	</tr>
-	</table>
+    <a href="https://www.instagram.com/popular/instagram-food/" style="display: inline-block; margin: 6px; padding: 10px 16px; background-color: #8b4d1e; border-radius: 6px; color: #ffffff; font-family: Arial, sans-serif; font-weight: bold;"><span aria-hidden="true">📷</span> Instagram</a>
+     <a href="https://www.bing.com/ck/a?!&&p=f9c791e979a6b897edb64375e244c680827c8ccbc1a91ffaf0d511f352183550JmltdHM9MTc5MTkzNjAwMA&ptn=3&ver=2&hsh=4&fclid=0546a0a4-a06a-6915-1977-b79ea1c2684a&psq=facebook+food+areas+&u=a1aHR0cHM6Ly93d3cuZmFjZWJvb2suY29tL21hcmtldHBsYWNlLw"  style="display: inline-block; margin: 6px; padding: 10px 16px; background-color: #8b4d1e; border-radius: 6px; color: #ffffff; font-family: Arial, sans-serif; font-weight: bold;"><span aria-hidden="true">f</span> Facebook</a>
 
-	
-	</article>
-	</center>
+<a href="https://www.tiktok.com/@pastaland" 
+style="display: inline-block; margin: 6px; padding: 10px 16px; background-color: #8b4d1e; border-radius: 6px; color: #ffffff; font-family: Arial, sans-serif; font-weight: bold;"><span aria-hidden="true">♪</span> TikTok</a>
+		 <p>| Pastaland 123 35st Street, City, State, 12345 | <a href="mailto:info@pastaland.com" style="color: #8b4d1e; text-decoration: underline;"> <br>Contact Us</a> 
+	 </p>
+        </td>
+     </tr>
+    </table>
+ </td>
+</tr>
+</table>
+</td>
+ </tr>
+</table>
 </body>
 </html>
